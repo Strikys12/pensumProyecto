@@ -1,5 +1,4 @@
 
-import java.nio.channels.Pipe.SourceChannel;
 import java.util.Scanner;
 
 public class App {
@@ -36,11 +35,9 @@ public class App {
                                 "Indique el programa que desea ver el pensum:\n1 - Desarollo de Software\n2 - Arte Culinario\n3 - Comercio Internacional\n4 - Seguridad Laboral\n5 - Sistemas informáticos\n6 - Producción de eventos\n\nPresione 0 para retroceder");
                         opcionPensum = sc.nextInt();
                         sc.nextLine();
-
                         if (opcionPensum == 0) {
                             break;
-
-                        } else {
+                        }else {
                             switch (opcionPensum) {
 
                                 case 1:
@@ -209,7 +206,9 @@ public class App {
                     break;
             }
         }
-        System.out.println(" Gracias por haberse contactado con Nexus.");
+        System.out.println("Gracias por haberse contactado con Nexus.");
+
+        sc.close();
 
     }
 }
