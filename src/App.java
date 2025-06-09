@@ -9,7 +9,7 @@ public class App {
         int opcion = 0;
         int retroceder = 0;
 
-        while (opcion != 6) {
+        while (opcion != 6 && opcion != 5) {
 
             System.out.println("Estimado/a " + nombre
                     + ". Indique la opción que desea realizar:\n1 - Ver programas disponibles.\n2 - Ver malla curricular.\n3 - Costos.\n4 - Requisitos.\n5 - Inscribirse\n6 - Salir");
@@ -134,6 +134,36 @@ public class App {
                         }
                         System.out.println("Ha escogido una opción invalida, vuelva a intentarlo.");
                     }
+                    break;
+                case 5:
+                    String[] nombreCarrera = { "Desarrollo de Software", "Arte Culinario", "Comercio Internacional",
+                            "Seguridad Laboral", "Sistemas Informáticos", "Producción de Eventos" };
+
+                    System.out.println("Estimado/a " + nombre
+                            + " indique el programa al cual desea inscribirse:\n1 - Desarollo de Software.\n2 - Arte Culinario.\n3 - Comercio Internacional.\n4 - Seguridad Laboral.\5 - Sistemas informáticos.\n6 - Producción de Eventos. ");
+                    int opcionCarrera = sc.nextInt();
+
+                    System.out.print("Por favor, ingrese su nombre completo:");
+                    String nombreCompleto = sc.next();
+
+                    System.out.print("Ingrese su número de identificación:");
+                    String numeroIdentificacion = sc.next();
+
+                    System.out.print("Ingrese su número de teléfono:");
+                    String numeroTelefono = sc.next();
+
+                    System.out.print("Ingrese su correo electrónico:");
+                    String correo = sc.next();
+
+                    System.out.print("Ingrese su edad:");
+                    String edad = sc.next();
+
+                    System.out.println("\nEstimado/a " + nombre
+                            + " le confirmamos la siguiente información:\nNombre del aspirante: " + nombreCompleto
+                            + ".\nPrograma al que aspira: " + nombreCarrera[(opcionCarrera - 1)]
+                            + ".\nNumero de identificación: " + numeroIdentificacion + ".\nTeléfono de contacto: "
+                            + numeroTelefono + ".\nCorreo electrónico: " + correo + ".\nEdad:" + edad
+                            + ".\n\nEstaremos validando la información y pronto nos contactaremos con usted.");
 
                     break;
                 case 6:
@@ -145,7 +175,7 @@ public class App {
             }
 
         }
-        System.out.println("Estimado " + nombre + " Gracias por haberse contactado con Nexus.");
+        System.out.println(" Gracias por haberse contactado con Nexus.");
 
     }
 }
