@@ -142,21 +142,22 @@ public class App {
                     System.out.println("Estimado/a " + nombre
                             + " indique el programa al cual desea inscribirse:\n1 - Desarollo de Software.\n2 - Arte Culinario.\n3 - Comercio Internacional.\n4 - Seguridad Laboral.\5 - Sistemas informáticos.\n6 - Producción de Eventos. ");
                     int opcionCarrera = sc.nextInt();
+                    sc.nextLine();
 
                     System.out.print("Por favor, ingrese su nombre completo:");
-                    String nombreCompleto = sc.next();
+                    String nombreCompleto = sc.nextLine();
 
                     System.out.print("Ingrese su número de identificación:");
-                    String numeroIdentificacion = sc.next();
+                    String numeroIdentificacion = sc.nextLine();
 
                     System.out.print("Ingrese su número de teléfono:");
-                    String numeroTelefono = sc.next();
+                    String numeroTelefono = sc.nextLine();
 
                     System.out.print("Ingrese su correo electrónico:");
-                    String correo = sc.next();
+                    String correo = sc.nextLine();
 
                     System.out.print("Ingrese su edad:");
-                    String edad = sc.next();
+                    String edad = sc.nextLine();
 
                     System.out.println("\nEstimado/a " + nombre
                             + " le confirmamos la siguiente información:\nNombre del aspirante: " + nombreCompleto
